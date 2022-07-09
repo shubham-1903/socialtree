@@ -4,19 +4,27 @@ import { BsInstagram } from "react-icons/bs";
 const ex = {
 	e: "transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300",
 };
-const Main = ({ socail}) => {
+const Main = ({ socail, avatar, href, css }) => {
 	return (
 		<div
-			className=' flex justify-center items-center border-orange-800 w-72 h-20 rounded-3xl
+			className={`flex justify-center items-center border-orange-800 w-72 h-20 rounded-3xl
     drop-shadow-xl  cursor-pointer
-    transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 my-2'
+		transition ease-in-out delay-150 bg-slate-300 hover:-translate-y-1 
+		hover:scale-110 hover:${css} duration-300 my-2
+    `}
 		>
-			<span className='pr-2  cursor-pointer'>
-				<BsInstagram className='w-10 h-10 cursor-pointer' />
-			</span>
-			<div className='cursor-pointer'>{socail}</div>
+			<a href={href} className='flex flex-row' target='_blank'>
+				<span className='pr-2  cursor-pointer '>
+					{avatar}
+					{/* <img src={gif}/> */}
+					{/* <avatar className='w-10 h-10 cursor-pointer' /> */}
+				</span>
+				<div className='cursor-pointer'>{socail}</div>
+			</a>
 		</div>
 	);
 };
 
 export default Main;
+
+// transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 my-2

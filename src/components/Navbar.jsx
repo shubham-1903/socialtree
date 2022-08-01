@@ -20,14 +20,17 @@ const Navbar = ({ toggleSwitch, changeData, mode }) => {
 						{isOn ? (
 							<img
 								className='h-10 w-10 rounded-3xl'
-								src='../../images/light_logo.svg'
+								// src='../../images/light_logo.svg'
+								src='https://lh3.googleusercontent.com/pw/AL9nZEVuWiFY_sXNF42LlgodxNtdGxGkH-szETCh78Dcw6ozEdWTwbsXwQYkCPX7c1ugloqfg98YL7ovSrfNNaMC0W7edvw6ne-xxMg9KpJzN-jaS6JS_eR4B_Ff5svwG-FlABND9EQMb3Bk5nvd0D_SptVXkg=w905-h970-no?authuser=0'
 								alt='logo'
 							/>
+							
 						) : (
 							<img
 								className='h-10 w-10 rounded-3xl'
-								src='../../images/logo.svg'
-								alt='logo'
+								// src='../../images/logo.svg'
+								src='https://lh3.googleusercontent.com/pw/AL9nZEW94YlLuk4I20UvbYQURakABlgEsTsr0HJPt46sPJF-7iWKh0viRYHj07Kih9xVkTAntgrmrC1ZkqS3D7fp4FUQxsQ93x0yMsZO5uabLSq2YiRl5zRM7THDCi5A37SpQ3kMvOhNERfws0Jf1e2phknXRA=w905-h970-no?authuser=0'
+								alt='dark-logo'
 							/>
 						)}
 					</a>

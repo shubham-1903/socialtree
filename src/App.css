@@ -40,3 +40,26 @@
 button {
   font-size: calc(10px + 2vmin);
 }
+
+
+.switch {
+  width: 56px;  /*Width of the switch 80px 30% = 56px*/
+  height: 35px; /*Height of the switch 50px 30% = 35px*/
+  background-color: rgba(255, 255, 255, 0.4);
+  display: flex;
+  justify-content: flex-start;
+  border-radius: 50px;
+  padding: 3.5px; /*Padding of the switch 5px 30% = 3.5px*/
+  cursor: pointer;
+}
+
+.switch[data-isOn="true"] {
+  justify-content: flex-end;
+}
+
+.handle {
+  width: 28px; /*Width of the handle 40px 30% = 28px*/
+  height: 28px; /*Height of the handle 40px 30% = 28px*/
+  background-color: white;
+  border-radius: 40px;
+}
